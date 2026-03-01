@@ -23,19 +23,19 @@ Project ini adalah **Rest-like API / Wrapper API** yang melakukan scraping data 
 
 | Platform | Status | Route | Endpoint | Info |
 | :--- | :---: | :--- | :--- | :--- |
-| Oploverz | 🟢 | /oploverz | 26 | Anime |
+| Oploverz | 🟢 | /oploverz | 24 | Anime |
 | Samehadaku | 🟢 | /samehadaku | 16 | Anime |
 | Kusonime | 🟢 | /kusonime | 11 | Anime |
-| Anoboy | 🟢 | /anoboy | 29 | Anime |
+| Anoboy | 🟢 | /anoboy | 27 | Anime |
 | LayarAnime | 🔴 | - | - | - |
-| NimeGami | 🟢 | /nimegami | 11 | Anime |
-| Nekopoi | 🟢 | /nekopoi | 13 | H-Nime, JAV, 2D, 3D, Cosplay |
+| NimeGami | 🟢 | /nimegami | 12 | Anime |
+| Nekopoi | 🔴 | - | - | - |
 | Komiku | 🟢 | /komiku | 11 | Manga, Manhua, Manhwa |
 | Doujindesu | 🟢 | /doujindesu | 11 | Manga, Manhwa, Manhua, Eroge |
 | Dojing | 🟢 | /adultcomic_v1 | 8 | Comic, Eroge, Manga |
 | KomikDewasa | 🟢 | /adultcomic_v2 | 9 | Baca Kitab Suci |
 | PixHentai | 🟢 | /adultcomic_v3 | 7 | Baca Kitab Suci |
-| AnimeKompi | 🟢 | /animekompi | 25 | Anime |
+| AnimeKompi | 🟢 | /animekompi | 28 | Anime |
 | AniChin | 🟢 | /anichin | 26 | Donghua |
 | MangaKita | 🟢 | /mangakita | 12 | Comic |
 | CrotPedia | 🔴 | - | - | - |
@@ -94,6 +94,33 @@ Project ini dibuat untuk **tujuan edukasi** dan pembelajaran tentang web scrapin
 
 ```json
 changelogs = [
+    {
+        "date": "2026-03-01",
+        "changes": [
+            "Adjust: Anoboy [/az-list + /az-list/advance] → [/list-az] (unified, show param optional)",
+            "Adjust: Anoboy [/anime-list + /anime-list/advance] → [/filters] (unified advanced search)",
+            "Adjust: Anoboy [/season-list] → [/list-season]",
+            "Adjust: Anoboy [/studio-list] → [/list-studio]",
+            "Adjust: Kusonime [/list-anime-batch-sub-indo] → [/subindo]",
+            "Adjust: Kusonime [/anime-list-bd] → [/bd]",
+            "Adjust: Kusonime [/daftar-live-action] → [/live-action]",
+            "Adjust: Kusonime [/anime-movie-list] → [/movie]",
+            "Adjust: Nimegami [/type/list] → [/list-type]",
+            "Adjust: Nimegami [/season-list] → [/list-season]",
+            "Adjust: Nimegami [/genre-list] → [/list-genre]",
+            "New: Nimegami [/movie] Anime movie list (URL: nimegami.id/type/movie/)",
+            "New: AnimeKompi [/ongoing, /upcoming, /hiatus] Publication status shortcut endpoints",
+            "Adjust: AnimeKompi [/az-list/{query}] → [/list-az/{query}]",
+            "Adjust: Doujindesu [/az-list] → [/list-az]",
+            "Adjust: AdultComic V2 [/az-list/{letter}] → [/list-az/{letter}]",
+            "Adjust: ShiroDoujin [/all-list] → [/list-all]",
+            "Adjust: ShiroDoujin [/genre-list] → [/list-genre]",
+            "Adjust: MiHentai [/az-list] → [/list-az]",
+            "Adjust: Sasangeyou [/az-list] → [/list-az]",
+            "Adjust: DonghuaFilm [/az-list] → [/list-az]",
+            "Adjust: AniChin [/az-list] → [/list-az]"
+        ]
+    },
     {
         "date": "2026-02-28",
         "changes": [
