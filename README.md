@@ -30,24 +30,24 @@ Project ini adalah **Rest-like API / Wrapper API** yang melakukan scraping data 
 | LayarAnime | 🔴 | - | - | - |
 | NimeGami | 🟢 | /nimegami | 12 | Anime |
 | Nekopoi | 🔴 | - | - | - |
-| Komiku | 🟢 | /komiku | 11 | Manga, Manhua, Manhwa |
-| Doujindesu | 🟢 | /doujindesu | 11 | Manga, Manhwa, Manhua, Eroge |
-| Dojing | 🟢 | /adultcomic_v1 | 8 | Comic, Eroge, Manga |
-| KomikDewasa | 🟢 | /adultcomic_v2 | 9 | Baca Kitab Suci |
-| PixHentai | 🟢 | /adultcomic_v3 | 7 | Baca Kitab Suci |
+| Komiku | 🔴 | /komiku | 11 | Manga, Manhua, Manhwa |
+| Doujindesu | 🔴 | /doujindesu | 11 | Manga, Manhwa, Manhua, Eroge |
+| Dojing | 🔴 | /adultcomic_v1 | 8 | Comic, Eroge, Manga |
+| KomikDewasa | 🔴 | /adultcomic_v2 | 9 | Baca Kitab Suci |
+| PixHentai | 🔴 | /adultcomic_v3 | 7 | Baca Kitab Suci |
 | AnimeKompi | 🟢 | /animekompi | 28 | Anime |
-| AniChin | 🟢 | /anichin | 26 | Donghua |
-| MangaKita | 🟢 | /mangakita | 12 | Comic |
+| AniChin | 🔴 | /anichin | 26 | Donghua |
+| MangaKita | 🔴 | /mangakita | 12 | Comic |
 | CrotPedia | 🔴 | - | - | - |
 | KomikIndo | 🟢 | /komikindo | 20 | Comic |
-| ShiroDoujin | 🟢 | /shirodoujin | 18 | Manhwa, Manga, Doujinshi |
+| ShiroDoujin | 🔴 | /shirodoujin | 18 | Manhwa, Manga, Doujinshi |
 | KomikKita | 🟢 | /komikkita | 18 | Manhwa, Manga, Manhua |
 | AnimeBagus | 🔴 | - | - | - |
-| DonghuaFilm | 🟢 | /donghuafilm | 25 | Donghua |
-| MiHentai | 🟢 | /mihentai | 13 | Baca Kitab Suci |
-| Natsu | 🟢 | /natsu | 28 | Comic |
-| Sasangeyou | 🟢 | /sasangeyou | 29 | Baca Kitab Suci |
-| Mangaball | 🟢 | /mangaball | 28 | Comic |
+| DonghuaFilm | 🔴 | /donghuafilm | 25 | Donghua |
+| MiHentai | 🔴 | /mihentai | 13 | Baca Kitab Suci |
+| Natsu | 🔴 | /natsu | 28 | Comic |
+| Sasangeyou | 🔴 | /sasangeyou | 29 | Baca Kitab Suci |
+| Mangaball | 🔴 | /mangaball | 28 | Comic |
 
 ---
 
@@ -94,6 +94,29 @@ Project ini dibuat untuk **tujuan edukasi** dan pembelajaran tentang web scrapin
 
 ```json
 changelogs = [
+    {
+        "date": "2026-11-24",
+        "changes": [
+            "Update: API Revival — all platforms re-audited & fixed after 9 months inactive",
+            "Update: All 129 anime endpoints re-verified live (Oploverz, Anoboy, Samehadaku, Kusonime, NimeGami, AnimeKompi)",
+            "Fix: Oploverz, Anoboy, Samehadaku parsers updated for site changes",
+            "Update: NimeGami parser rewritten (site rebuilt as Next.js app); [/schedule, /bd] deprecated — endpoints return 410",
+            "Update: AnimeKompi parser rewritten against the site's JSON API (Vue SPA)",
+            "Fix: KomikKita [/detail] crash (unsupported CSS selector)",
+            "Fix: Komiku [/home, /genre-list] updated for homepage structure changes (212 genres)",
+            "Update: Komiku deprecated — source unreachable from hosting network, endpoints return 410",
+            "Fix: KomikIndo re-verified — no changes needed",
+            "Update: MangaBall parser rewritten (site moved to mangaball.com, API changed); [/person-search, /person/{id}, /keyword/{id}] deprecated — endpoints return 410",
+            "Update: MangaBall deprecated — source unreachable from hosting network, endpoints return 410",
+            "Remove: DonghuaFilm (site moved behind member login, no public API)",
+            "Remove: AniChin (source unreachable from hosting network)",
+            "Remove: MangaKita, Natsu (sites unavailable / blocked)",
+            "Update: All adult platforms deprecated — Doujindesu, Mihentai, ShiroDoujin, AdultComic V1/V2/V3, Sasangeyou discontinued 1 Dec 2026, endpoints return 410",
+            "Add: Deprecated-endpoint UI — explorers mark deprecated endpoints & show a notice instead of fetching",
+            "Update: UI rebrand — black & crimson dark theme",
+            "Remove: API v2 & vharanime streaming (project stays v1-only, API provider only)"
+        ]
+    },
     {
         "date": "2026-03-01",
         "changes": [
