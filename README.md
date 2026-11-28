@@ -95,6 +95,14 @@ Project ini dibuat untuk **tujuan edukasi** dan pembelajaran tentang web scrapin
 ```json
 changelogs = [
     {
+        "date": "2026-11-28",
+        "changes": [
+            "New: Platform Donghive (Donghua) — 13 endpoints: home, detail, watch, list-genre, genre, search, latest, schedule, recommendation, top-weekly/monthly/alltime",
+            "Add: Donghua category back on homepage — Donghive card with Donghua badge & filter",
+            "Add: Donghive in API Anime Preview explorer (config, browse groups, Donghua badge)"
+        ]
+    },
+    {
         "date": "2026-11-24",
         "changes": [
             "Update: API Revival — all platforms re-audited & fixed after 9 months inactive",
